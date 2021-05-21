@@ -22,7 +22,6 @@ client.connect(err => {
 
    app.post('/addServices', (req, res) => {
     const newServices = req.body;
-    // console.log('adding new services: ', newServices)
     servicesCollection.insertOne(newServices)
       .then(result => {
         // console.log('inserted count', result.insertedCount);
