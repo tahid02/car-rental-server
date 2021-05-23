@@ -140,7 +140,7 @@ client.connect(err => {
 
     reviewsCollection.find({})
       .toArray((err, reviews) => {
-        console.log(reviews)
+        // console.log(reviews)
         res.send(reviews)
       })
   })
